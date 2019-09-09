@@ -1,0 +1,99 @@
+.common-card {
+    border-radius: 10px !important;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+    padding: 10px 20px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.member-info {
+
+    &:extend(.common-card);
+    margin-top: 100px;
+
+    .avatar {
+        margin-top: -130px;
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    .name {
+        color: #4a4a4a;
+        font: 24px Arial;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+    .email {
+        color: #9b9b9b;
+        font: 12px Arial, Helvetica, sans-serif;
+        line-height: 2;
+    }
+
+    .edit {
+        padding-bottom: 10px;
+        .icon {
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #f1f6f9;
+            font-size: 14px;
+            margin-right: 20px;
+            cursor: pointer;
+            &:hover {
+                background-color: #e0e0e0;
+            }
+        }
+ 
+        .delete {
+            color: red !important;
+        }
+    }
+
+    .sep {
+        border-bottom: 1px solid #efefef;
+        width: 100%;
+    }
+
+    .item {
+        padding: 15px 30px;
+        color: #827e99;
+        font-size: 12px;
+        .role-title {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    }
+
+    .share-btn {
+        margin-top: 30px;
+        background-color: #9b9b9b !important;
+        width: 100% !important;
+    }
+}
+
+.member-edit {
+    padding: 20px 30px;
+    &:extend(.common-card);
+
+    .form-item {
+        width: 100%;
+        color: #333;
+        .label {
+            font-size: 14px;
+            line-height: 2;
+        }
+        margin-bottom: 20px;
+    }
+
+    .save-btn {
+        background-color: #469b46;
+        color: #fff;
+        width: 100% !important;
+    }
+}
